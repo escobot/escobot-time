@@ -1,0 +1,28 @@
+{
+  "name": "escobot-time",
+  "version": "1.0.0",
+  "description": "time microservice",
+  "main": "server/service.js",
+  "scripts": {
+    "test": "NODE_ENV=test eslint bin server && nyc mocha --recursive test",
+    "start": "node bin/run.js"
+  },
+  "author": "pbgnz",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.10",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "moment": "^2.18.1",
+    "superagent": "^3.5.2"
+  },
+  "bin": {
+    "escobot-time": "run.js"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.2",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
+  }
+}
