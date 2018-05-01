@@ -1,23 +1,30 @@
 {
   "name": "escobot-time",
   "version": "1.0.0",
-  "description": "time microservice",
+  "description": "escobot time",
   "main": "server/service.js",
   "scripts": {
     "test": "NODE_ENV=test eslint bin server && nyc mocha --recursive test",
     "start": "node bin/run.js"
   },
+  "engines": {
+    "node": "6.9.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escobot/escobot-time"
+  },
   "author": "pbgnz",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/escobot/escobot-time/issues"
+  },
+  "homepage": "https://github.com/escobot/escobot-time#readme",
   "dependencies": {
     "bunyan": "^1.8.10",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
-    "moment": "^2.18.1",
     "superagent": "^3.5.2"
-  },
-  "bin": {
-    "escobot-time": "run.js"
   },
   "devDependencies": {
     "mocha": "^3.4.2",
